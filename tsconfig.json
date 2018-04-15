@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 	Specify ECMAScript target version
+    "emitDecoratorMetadata": true, // Emit design-type metadata for decorated declarations in source
+    "experimentalDecorators": true, // Enables experimental support for ES decorators
+    "noEmitHelpers": true, // Do not generate custom helper functions like __extends in compiled output.
+    "pretty": true, // Stylize errors and messages using color and context.
+    "sourceMap": true, // Generates corresponding .map file
+    "lib": ["es2018", "dom"], // List of library files to be included in the compilation.
+    // "strict": true // 	Enable all strict type checking options
+    "strictNullChecks": false // In strict null checking mode, the null and undefined values are not in the domain of every type and are only assignable to themselves and any
+  },
+  "exclude": ["node_modules"],
+  "awesomeTypescriptLoaderOptions": {
+    "useWebpackText": true, //Allows loaders to be chained to awesome-typescript-loader
+    "forkChecker": true,
+    // Use internal file cache
+    "useCache": true
+  },
+  // signals to the IDE to generate all ts to js files for a given tsconfig.json upon saving
+  "compileOnSave": false,
+  "buildOnSave": false
+}
